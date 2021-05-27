@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('qual seu nome? ')
+        document.writeln(`Olá, <strong> ${nome}</strong>.<br> Seu nome tem ${nome.length} letras. <br>`)
+        document.writeln(`Aliás, seu nome em letras maiúsculas fica ${nome.toUpperCase()}`);
+
+        /*                                       <Dentro no console em jsNode>
+        Windows PowerShell
+Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+
+Experimente a nova plataforma cruzada PowerShell https://aka.ms/pscore6
+
+PS C:\Users\Vinicius\Desktop\Projetos\Curso de JavaScript> node        
+Welcome to Node.js v14.17.0.      
+Type ".help" for more information.
+> n1 = 1200.457
+1200.457
+> n1
+1200.457
+> n1.toFixed(2)
+'1200.46'
+> n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})      <Convertendo valor para salário e em REAIS>
+'R$ 1.200,46'
+>       */
+    </script>
+</body>
+</html>
