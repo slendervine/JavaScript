@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 23pt Arial;
+            margin: 70px;
+            text-align: center;
+        };
+
+
+
+        input{
+            width: 500px;
+            font: normal 500pt Arial;
+        }
+
+        #texto01{
+            font: normal 60px;
+            border-color: cornflowerblue;
+            width: 50px;
+            height: 20px;
+            
+        }
+
+        #texto02{
+            font: normal 60px;
+            border-color: cornflowerblue;
+            width: 50px;
+            height: 20px;
+            
+        }
+
+        #botao{
+            width: 389px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="texto01" id="texto01"> +
+    <input type="number" name="texto02" id="texto02"><br>
+    <input type="button" value="Calcular" onclick="somar()" id="botao">
+
+    <div id="resultado"><br>
+        Resultado
+    </div>
+    
+    <script>
+        function somar(){                                            //Coleta de daods que usuario digita:
+            var t1 = window.document.getElementById('texto01')
+            var t2 = window.document.getElementById('texto02')
+            var resultado = window.document.getElementById('resultado')
+                                                                       //Convertendo estes dados para Number
+            var n1 = Number(t1.value)                                 // n1 = 'valor' de t1 convertido em número
+            var n2 = Number(t2.value)
+            var soma = n1+n2
+            resultado.innerHTML =`A soma entre ${n1} e ${n2} é de ${soma}`
+
+        }
+    </script>
+</body>
+</html>
