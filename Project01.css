@@ -1,0 +1,25 @@
+body{
+    background: rgb(132, 158, 206);
+    font: normal 15pt Arial;
+}
+
+header{
+    color: blanchedalmond;
+    text-align: center;
+}
+
+section{
+    background: blanchedalmond;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    margin: auto;
+    width: 400px;
+    box-shadow: 5px 5px 10px rgb(49, 46, 46);
+}
+
+footer{
+    color: blanchedalmond;
+    text-align: center;
+    font-style: italic;
+}   
